@@ -114,14 +114,23 @@ export default function ContactPage() {
             </form>
           )}
 
-          <div className="mt-12 text-center">
+          <div className="mt-12 text-center space-y-2">
             <p className="text-warm-gray text-sm">
-              Or email us directly at{" "}
+              Email us at{" "}
               <a
-                href="mailto:support@nabprize.com"
+                href="mailto:webdevhasu@gmail.com"
                 className="text-purple font-medium hover:text-purple-dark transition-colors"
               >
-                support@nabprize.com
+                webdevhasu@gmail.com
+              </a>
+            </p>
+            <p className="text-warm-gray text-sm">
+              Call or WhatsApp at{" "}
+              <a
+                href="tel:+923474054450"
+                className="text-purple font-medium hover:text-purple-dark transition-colors"
+              >
+                +92 347 405 4450
               </a>
             </p>
           </div>
