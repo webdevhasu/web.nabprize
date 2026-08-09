@@ -44,7 +44,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <a href="#" className="btn-primary text-sm py-3 px-6">
+          <a href="/nabprize.apk" download className="btn-primary text-sm py-3 px-6">
             Download App
           </a>
         </div>
@@ -93,7 +93,8 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="#"
+              href="/nabprize.apk"
+              download
               className="btn-primary text-sm py-3 px-6 text-center mt-2"
             >
               Download App

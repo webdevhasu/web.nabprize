@@ -167,7 +167,7 @@ export default function HowItWorksPage() {
 
       <section className="bg-white py-section">
         <div className="section-container text-center">
-          <a href="#" className="btn-primary">
+          <a href="/nabprize.apk" download className="btn-primary">
             Download NabPrize
           </a>
         </div>

@@ -42,7 +42,7 @@ export default function Home() {
                 our weekly $1,000+ lucky draw.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <a href="#" className="btn-primary text-center">
+                <a href="/nabprize.apk" download className="btn-primary text-center">
                   Download for Android
                 </a>
                 <a
@@ -191,7 +191,7 @@ export default function Home() {
             Monday, we randomly select winners and pay out instantly via PayPal or Prepaid Visa.
             The more tasks you complete, the higher your chances.
           </p>
-          <a href="#" className="btn-primary">
+          <a href="/nabprize.apk" download className="btn-primary">
             Download to Join
           </a>
         </div>
@@ -252,7 +252,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
             Start Earning Today
           </h2>
-          <a href="#" className="btn-primary">
+          <a href="/nabprize.apk" download className="btn-primary">
             Download for Android
           </a>
         </div>
