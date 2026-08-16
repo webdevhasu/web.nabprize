@@ -9,40 +9,48 @@ interface FaqItem {
 
 const faqData: FaqItem[] = [
   {
-    q: "Is NabPrize free to use?",
-    a: "Yes, completely free. There are no subscription fees, no hidden charges, and no paywalls. You earn money by completing tasks — NabPrize never asks you to pay anything.",
+    q: "Is NabPrize free to play?",
+    a: "Yes, completely free. There are no subscription fees, no hidden charges, and no paywalls. You earn NP-Coins by playing matches, checking in daily, and watching ads.",
   },
   {
-    q: "How do I get paid — PayPal or something else?",
-    a: "You can choose between PayPal and a Prepaid Visa card when you withdraw. Prepaid Visa has no fees and works almost anywhere Visa is accepted. PayPal sends cash directly to your account with a small processing fee.",
+    q: "What are NP-Coins?",
+    a: "NP-Coins are the in-game currency. You earn them by winning matches against the AI, checking in daily, and watching rewarded ads. Use them to redeem rewards like mobile load.",
   },
   {
-    q: "What is the minimum withdrawal amount?",
-    a: "The minimum withdrawal is $5.00. Once your available balance hits this threshold, the Withdraw button unlocks and you can cash out anytime.",
+    q: "How does the Dots & Boxes game work?",
+    a: "It's the classic pencil-and-paper game brought to life. You and the AI take turns connecting dots on a 5×5 grid. When you complete a box, you get another turn. The player with the most boxes at the end wins.",
   },
   {
-    q: "How does the weekly lucky draw work?",
-    a: "Every task you complete during the week earns you draw entries. On Monday, we randomly select winners from all qualified entries and pay out prizes via PayPal or Prepaid Visa. The more tasks you finish, the higher your chances of winning.",
+    q: "How do I earn NP-Coins?",
+    a: "There are multiple ways: Win practice matches (5 coins for a win), check in daily (streak bonuses increase), and watch rewarded ads. Your lifetime earnings are tracked in your profile.",
+  },
+  {
+    q: "How do I redeem rewards?",
+    a: "Go to the Rewards tab, browse the available reward tiers, and tap Redeem on the one you want. Enter your phone number for mobile load or email for other rewards. Your reward will be processed.",
+  },
+  {
+    q: "What is the daily check-in?",
+    a: "Open the app every day and tap the check-in button on the home screen. You earn bonus NP-Coins and your streak grows. The longer your streak, the bigger the rewards.",
+  },
+  {
+    q: "Can I play offline?",
+    a: "Yes! The practice mode works completely offline. You can play against the NabBot AI without an internet connection. You'll need internet for account creation, rewards, and ads.",
+  },
+  {
+    q: "Is my data safe?",
+    a: "Absolutely. We use Firebase for secure authentication and Firestore with strict security rules for data storage. We never sell your personal data to third parties.",
+  },
+  {
+    q: "Can I play against real players?",
+    a: "1v1 multiplayer is coming soon! We're building real-time challenge mode so you can play against friends or random opponents. Stay tuned for updates.",
+  },
+  {
+    q: "How do I change my password?",
+    a: "Go to Profile → Change Password. We'll send a password reset link to your registered email. Click the link to set a new password.",
   },
   {
     q: "Which countries can use NabPrize?",
-    a: "NabPrize is available worldwide. Some offerwall tasks may be limited to specific regions, but the lucky draw and PayPal and Prepaid Visa withdrawals work in any country that supports PayPal or Visa.",
-  },
-  {
-    q: "Is my personal information safe?",
-    a: "Yes. We use encryption to protect your data and never sell personal information to third parties. Your data is only used for account verification and payment processing.",
-  },
-  {
-    q: "Why do my earnings show as 'Pending' first?",
-    a: "Some tasks require a short verification period before funds become available. This is standard practice to confirm the task was completed correctly. Once verified, your pending balance moves to your available balance automatically.",
-  },
-  {
-    q: "How do referrals work?",
-    a: "Share your unique referral link with friends. When someone signs up using your link and completes their first task, you both earn a bonus. There's no limit to how many people you can refer.",
-  },
-  {
-    q: "Is this a lottery or gambling app?",
-    a: "No. NabPrize is a rewards platform. You earn entries by completing real tasks — you never pay money to enter the draw. The lucky draw is a bonus feature, not the core product.",
+    a: "NabPrize is available worldwide on Android. Rewards may vary by region. The game itself works in any country.",
   },
 ];
 
@@ -66,31 +74,14 @@ export default function FaqPage() {
         <div className="section-container max-w-2xl">
           <div className="space-y-4">
             {faqData.map((item, i) => (
-              <div
-                key={i}
-                className="border border-gray-200 rounded-card overflow-hidden"
-              >
+              <div key={i} className="border border-gray-200 rounded-card overflow-hidden">
                 <button
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-peach-50 transition-colors"
                   onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 >
-                  <span className="font-semibold text-navy pr-4">
-                    {item.q}
-                  </span>
-                  <svg
-                    className={`w-5 h-5 text-warm-gray flex-shrink-0 transition-transform ${
-                      openIndex === i ? "rotate-180" : ""
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
+                  <span className="font-semibold text-navy pr-4">{item.q}</span>
+                  <svg className={`w-5 h-5 text-warm-gray flex-shrink-0 transition-transform ${openIndex === i ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
                 {openIndex === i && (

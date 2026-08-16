@@ -11,9 +11,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "NabPrize - Complete Simple Tasks, Earn Real Money",
+  title: "NabPrize - Play Dots & Boxes, Earn NP-Coins",
   description:
-    "Join thousands earning cash rewards through tasks, surveys, and weekly $1,000+ lucky draws. Download NabPrize for Android.",
+    "Challenge the AI in the classic Dots & Boxes game, earn NP-Coins, and redeem rewards. Download NabPrize for Android — free to play.",
 };
 
 export default function RootLayout({

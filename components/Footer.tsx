@@ -3,6 +3,7 @@ import Link from "next/link";
 const quickLinks = [
   { href: "/", label: "Home" },
   { href: "/how-it-works", label: "How It Works" },
+  { href: "/upcoming-features", label: "Coming Soon" },
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/terms-of-service", label: "Terms of Service" },
   { href: "/contact", label: "Contact" },
@@ -18,8 +19,8 @@ export default function Footer() {
               NabPrize
             </Link>
             <p className="mt-4 text-warm-gray-light text-sm leading-relaxed">
-              Earn real money by completing simple tasks, surveys, and joining
-              weekly lucky draws.
+              Play the classic Dots &amp; Boxes game against AI, earn NP-Coins,
+              and redeem exciting rewards. Free to play, fun to win.
             </p>
           </div>
 
@@ -47,13 +48,18 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-warm-gray-light">
               <li>
-                <a href="mailto:webdevhasu@gmail.com" className="hover:text-white transition-colors">
-                  webdevhasu@gmail.com
+                <a href="mailto:nabprize.official@gmail.com" className="hover:text-white transition-colors">
+                  nabprize.official@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+923474054450" className="hover:text-white transition-colors">
-                  +92 347 405 4450
+                <a href="https://wa.me/923474054450" className="hover:text-white transition-colors">
+                  WhatsApp: +92 347 405 4450
+                </a>
+              </li>
+              <li>
+                <a href="mailto:webdevhasu@gmail.com" className="hover:text-white transition-colors">
+                  Developer: webdevhasu@gmail.com
                 </a>
               </li>
             </ul>
@@ -64,7 +70,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="section-container py-6 text-center">
           <p className="text-sm text-warm-gray">
-            &copy; 2026 NabPrize. All rights reserved.
+            &copy; 2025 NabPrize. All rights reserved.
           </p>
         </div>
       </div>
